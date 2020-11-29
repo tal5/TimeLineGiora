@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <title>add an event</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="background">
+      <form action="addWork" method="POST" encType="multipart/form-data">
+        <div class="rightform">
+          <label for="creatorName">שמך:</label>
+          <input class="textInput" type="text" id="creatorName" name="creatorName">
+          <label for="fileName">שם העבודה:</label>
+          <input class="textInput" type="text" id="fileName" name="fileName">
+          <label for="date">תאריך התרחשות העבודה:</label>
+          <input dir="ltr" class="dateInput" type="number" id="date" name="date" min="-70000" max="2020">
+          <p>העלה את העבודה:</p>
+          <label class="fileLabel" for="uploadFile">
+            <img src="img/file-upload-icon-18.png" alt="בחר קובץ">
+            <p class="fileNameDisplay" id="uplodedfilename"></p>
+          </label>
+          <input type="file" id="uploadFile" name="uploadFile" class="upLoadTxt" accept=".docx">
+          <input class="submit" type="submit" value="">
+        </div>
+        <div class="leftform">
+          <label for="description">הכנס תקציר:</label>
+          <textarea class="textInput" rows = "5" cols = "50" id="description" name = "description">
+         </textarea>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script src="add.js"></script>
+</body>
+
+</html>
