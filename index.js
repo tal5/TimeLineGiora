@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const { getDocx } = require('./gdrive');
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.static('public', { extensions: ['html', 'css', 'js'] }));
 app.use(express.static('public/img'));
@@ -42,5 +43,5 @@ app.post('/addWork', async (req, res) => {
     res.redirect('http://localhost:3000/');
 });
 
-app.listen(3000, () => console.log('listening on port 3000'));
+app.listen(PORT, () => console.log('listening on port' + PORT));
 //GoogleDrive('1wdfKhFZSWfpQwBmWnbJ5wNZslbF3iCO_YMU3TuqUiz8', OPERATION_TYPES.GET_DOCX)
