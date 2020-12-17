@@ -11,19 +11,24 @@
     <div class="background">
       <form action="addWork" method="POST" encType="multipart/form-data">
         <div class="rightform">
-          <label for="creatorName">שמך:</label>
-          <input class="textInput" type="text" id="creatorName" name="creatorName">
-          <label for="fileName">שם העבודה:</label>
-          <input class="textInput" type="text" id="fileName" name="fileName">
-          <label for="date">תאריך התרחשות העבודה:</label>
-          <input dir="ltr" class="dateInput" type="number" id="date" name="date" min="-70000" max="2020">
-          <p>העלה את העבודה:</p>
+          <label for="creatorName">שמך:
+            <input class="textInput" type="text" id="creatorName" name="creatorName" required="required">
+          </label>
+          <label for="fileName">שם העבודה:
+            <input class="textInput" type="text" id="fileName" name="fileName" required="required">
+          </label>
+          <label for="date">תאריך התרחשות העבודה:
+            <input dir="ltr" class="dateInput" type="number" id="date" name="date" min="-70000" max="2020" required="required">
+          </label>
+          <span>העלה את העבודה:</span>
+          <div class="upload_file_div">
           <label class="fileLabel" for="uploadFile">
             <img src="img/file-upload-icon-18.png" alt="בחר קובץ">
-            <p class="fileNameDisplay" id="uplodedfilename"></p>
           </label>
-          <input type="file" id="uploadFile" name="uploadFile" class="upLoadTxt" accept=".docx">
-          <input class="submit" type="submit" value="">
+          <span class="fileNameDisplay" id="uplodedfilename"></span>
+        </div>
+          <input type="file" id="uploadFile" name="uploadFile" class="upLoadTxt" accept=".docx" required="required">
+          <input class="submit" type="submit" id="submit" value="">
         </div>
         <div class="leftform">
           <label for="description">הכנס תקציר:</label>

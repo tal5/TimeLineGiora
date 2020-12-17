@@ -73,11 +73,17 @@ body{
 add.html
 */
 
+.upload_file_div{
+  display: flex;
+  align-items: center;
+}
+
 .rightform{
 display: flex;
 flex-direction: column;
 width: 50%;
 padding-right: 1em;
+justify-content: space-evenly;
 }
 
 .leftform{
@@ -87,11 +93,13 @@ padding-right: 1em;
   }
 
 #description{
-  height: 60em;
-  width: 50em;
-  background-size: 50em 60em;
+  height: 100%;
+  width: 90%;
+  background-size: 100% 130%;
   padding-top: 6em;
-  text-indent: 3em;
+  padding-right: 3.3em;
+  text-indent: 0em;
+  background-position: right;
 }
 
 .background form {
@@ -112,8 +120,10 @@ width: 100%;
 
 
 .dateInput{
-  width:3.5em;
-  height: 1em;
+  width: 5em;
+  height: 2em;
+  border-radius: 20%;
+  font-size: 50%;
  }
 
 .textInput{
@@ -153,8 +163,7 @@ label{
 }
 
 .fileNameDisplay{
-  margin-top: -2em;
-  padding-right: 3em;
+  padding-right: 1em;
 }
 
 /*timeLine.html*/
