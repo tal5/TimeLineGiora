@@ -40,7 +40,7 @@ app.post('/addWork', async (req, res) => {
     GoogleDrive([creatorName, fileName, workYear, description, creationDate, docxFileId], OPERATION_TYPES.SAVE_SHEET).then(data => {
         console.log(data)
     }).catch(console.log);
-    res.redirect('http://localhost:3000/');
+    res.redirect('/');
 });
 
 app.listen(PORT, () => console.log('listening on port' + PORT));
