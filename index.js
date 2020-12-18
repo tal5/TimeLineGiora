@@ -43,5 +43,5 @@ app.post('/addWork', async (req, res) => {
     res.redirect('/');
 });
 
-app.listen(PORT, () => console.log('listening on port' + PORT));
+app.listen(PORT, () => console.log('listening on port ' + PORT));
 //GoogleDrive('1wdfKhFZSWfpQwBmWnbJ5wNZslbF3iCO_YMU3TuqUiz8', OPERATION_TYPES.GET_DOCX)

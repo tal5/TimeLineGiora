@@ -10,9 +10,6 @@
   height: 8vh;
   width: 3.84vw;
   border: none;
-  margin-top: 42em;
-  margin-left: 2em;
-  margin-bottom: 2em;
 }
 .addNew:focus {
   border: none;
@@ -23,7 +20,15 @@
 }
 
 .searchTimeLine{
-  height: 1em;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.searchTimeLineForm{
+  height: auto;
+  display: flex;
+  width: 100%;
+  justify-content: end;
 }
 
 body{
@@ -62,11 +67,15 @@ body{
 .upperDiv{
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  height: 50%;
 }
 
 .lowerDiv{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 50%;
 }
 
 /*
